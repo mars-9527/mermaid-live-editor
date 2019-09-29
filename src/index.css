@@ -14,6 +14,19 @@ html, body {
   margin-bottom: 16px;
 }
 
+.ant-col-8 {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+}
+.ant-col-16 {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+}
+
 i {
   font-size: 11px;
 }

@@ -56,10 +56,10 @@ class Edit extends React.Component {
       <Row gutter={16}>
         <Col span={8}>
           <Card title='Code'>
-            <Input.TextArea autosize={{ minRows: 21.5, maxRows: 32 }} value={this.json.code} onChange={this.onCodeChange} />
+            <Input.TextArea autosize={{ minRows: 23, maxRows: 16 }} value={this.json.code} onChange={this.onCodeChange} />
           </Card>
           <Card title='Mermaid configuration'>
-            <Input.TextArea autosize={{ minRows: 1, maxRows: 32 }} defaultValue={JSON.stringify(this.json.mermaid, null, 0)} onChange={this.onMermaidConfigChange} />
+            <Input.TextArea autosize={{ minRows: 1, maxRows: 16 }} defaultValue={JSON.stringify(this.json.mermaid, null, 0)} onChange={this.onMermaidConfigChange} />
           </Card>
         </Col>
         <Col span={16}>
