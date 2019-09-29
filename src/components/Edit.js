@@ -55,22 +55,11 @@ class Edit extends React.Component {
       <Divider />
       <Row gutter={16}>
         <Col span={8}>
-          <Affix>
-            <Card title='Code'>
-              <Input.TextArea autosize={{ minRows: 4, maxRows: 16 }} value={this.json.code} onChange={this.onCodeChange} />
-            </Card>
-          </Affix>
-          <Card title='Mermaid configuration'>
-            <Input.TextArea autosize={{ minRows: 4, maxRows: 16 }} defaultValue={JSON.stringify(this.json.mermaid, null, 2)} onChange={this.onMermaidConfigChange} />
+          <Card title='Code'>
+            <Input.TextArea autosize={{ minRows: 21.5, maxRows: 32 }} value={this.json.code} onChange={this.onCodeChange} />
           </Card>
-          <Card title='Links'>
-            <ul className='marketing-links'>
-              <li><a href='https://mermaidjs.github.io/' target='_blank'><Icon type='book' /> Mermaid Documentation</a></li>
-              <li><a href='https://github.com/knsv/mermaid' target='_blank'><Icon type='github' /> Mermaid on GitHub</a></li>
-              <li><a href='https://github.com/mermaidjs/mermaid-gitbook' target='_blank'><Icon type='github' /> Documentation on GitHub</a></li>
-              <li><a href='https://github.com/mermaidjs/mermaid-live-editor' target='_blank'><Icon type='github' /> Live Editor on GitHub</a></li>
-              <li><a href='https://github.com/mermaidjs/mermaid.cli' target='_blank'><Icon type='github' /> Mermaid CLI</a></li>
-            </ul>
+          <Card title='Mermaid configuration'>
+            <Input.TextArea autosize={{ minRows: 1, maxRows: 32 }} defaultValue={JSON.stringify(this.json.mermaid, null, 0)} onChange={this.onMermaidConfigChange} />
           </Card>
         </Col>
         <Col span={16}>
