@@ -59,7 +59,7 @@ class Edit extends React.Component {
             <Input.TextArea autosize={{ minRows: 25, maxRows: 16 }} spellCheck={false} value={this.json.code} onChange={this.onCodeChange} />
           </Card>
           <Card title='Mermaid configuration'>
-             default/forest/dark/neutral
+             Theme:default/forest/dark/neutral
             <Input.TextArea autosize={{ minRows: 1, maxRows: 16 }} defaultValue={JSON.stringify(this.json.mermaid, null, 0)} onChange={this.onMermaidConfigChange} />
           </Card>
         </Col>
