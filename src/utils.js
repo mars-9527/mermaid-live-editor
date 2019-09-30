@@ -27,5 +27,5 @@ C -->|Three| F[fa:fa-car Car]
 `
 export const defaultState = {
   code: defaultCode,
-  mermaid: { theme: 'default' }
+  mermaid: { theme: 'forest' }
 }
