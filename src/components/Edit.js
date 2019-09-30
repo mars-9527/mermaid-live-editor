@@ -56,7 +56,7 @@ class Edit extends React.Component {
       <Row gutter={16}>
         <Col span={8}>
           <Card title='Code'>
-            <Input.TextArea autosize={{ minRows: 25, maxRows: 16 }} spellCheck={false} value={this.json.code} onChange={this.onCodeChange} />
+            <Input.TextArea autosize={{ minRows: 24, maxRows: 16 }} spellCheck={false} value={this.json.code} onChange={this.onCodeChange} />
           </Card>
           <Card title='Mermaid configuration'>
              Theme:default/forest/dark/neutral
