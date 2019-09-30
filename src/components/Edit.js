@@ -52,11 +52,11 @@ class Edit extends React.Component {
     const { match: { url } } = this.props
     return <div>
       <h1>Mermaid Live Editor</h1>
-      <Divider />
+      {/*<Divider />*/}
       <Row gutter={16}>
         <Col span={8}>
           <Card title='Code'>
-            <Input.TextArea autosize={{ minRows: 23, maxRows: 16 }} value={this.json.code} onChange={this.onCodeChange} />
+            <Input.TextArea autosize={{ minRows: 25, maxRows: 16 }} spellCheck={false} value={this.json.code} onChange={this.onCodeChange} />
           </Card>
           <Card title='Mermaid configuration'>
             <Input.TextArea autosize={{ minRows: 1, maxRows: 16 }} defaultValue={JSON.stringify(this.json.mermaid, null, 0)} onChange={this.onMermaidConfigChange} />
@@ -65,7 +65,7 @@ class Edit extends React.Component {
         <Col span={16}>
           <Route exact path={url} render={(props) => <Preview {...props} code={this.json.code} />} />
           <Route path={url + '/error/:base64'} component={Error} />
-          <h3 style={{ textAlign: 'right' }}>Powered by mermaid <Tag color='green'>{mermaidVersion}</Tag></h3>
+          <h3 style={{ textAlign: 'right' }}><a href={'https://mermaidjs.github.io/'} target={'_blank'}>mermaid on github</a> <Tag color='green'>{mermaidVersion}</Tag></h3>
         </Col>
       </Row>
     </div>

@@ -11,7 +11,7 @@ html, body {
 }
 
 .ant-card {
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 }
 
 .ant-col-8 {
@@ -26,7 +26,21 @@ html, body {
   box-sizing: border-box;
   width: 50%;
 }
-
+.ant-input{
+  background:#C7EDCC;
+}
+.ant-card-head {
+  min-height: 40px;
+  padding: 0px 10px;
+}
+.ant-card-head-title{
+  padding: 8px 0;
+}
+.ant-card-body{
+  padding: 5px;
+}
 i {
   font-size: 11px;
 }
+
+
